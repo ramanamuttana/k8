@@ -415,7 +415,7 @@ spec:
 
 #### **Apply the Service**
 ```sh
-kubectl apply -f nginx-service.yaml
+kubectl apply -f nginx-service-elb.yaml
 ```
 #### **Verify the Service**
 ```sh
