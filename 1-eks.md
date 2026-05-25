@@ -447,6 +447,36 @@ kubectl get nodes
 ```bash
 kubectl describe node <node-name>
 ```
+```bash
+kubectl get nodes -o wide
+```
+Look at:
+```bash
+EXTERNAL-IP
+```
+Open Browser and type 
+```bash
+http://<EC2-PUBLIC-IP>:31142
+```
+ if you dont see any thing then 
+ Open Security Group Port
+
+MOST IMPORTANT STEP.
+
+AWS blocks NodePort traffic by default.
+
+Go to:
+
+AWS EC2 Security Groups Console
+
+Find worker node security group.
+
+Add inbound rule:
+
+Type	Protocol	Port	Source
+Custom TCP	TCP	31142	0.0.0.0/0
+
+Save.
 
 ---
 
