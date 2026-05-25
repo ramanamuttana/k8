@@ -456,7 +456,7 @@ EXTERNAL-IP
 ```
 Open Browser and type 
 ```bash
-http://<EC2-PUBLIC-IP>:31142
+http://<EC2-PUBLIC-IP>:port number
 ```
  if you dont see any thing then 
  Open Security Group Port
