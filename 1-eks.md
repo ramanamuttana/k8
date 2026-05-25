@@ -209,9 +209,37 @@ eksctl delete cluster --name=ekswithramana
 ## **3. Deploying an Application**  
 
 ### **Apply a Deployment Manifest**  
-Deploy an application using a Kubernetes deployment YAML file:  
+Deploy an application using a Kubernetes deployment YAML file: 
+### **Create a Deployment and a Service**
+#### **`nginx-deployment.yaml`**
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx
+          ports:
+            - containerPort: 80
+```
+to create type 
 ```bash
-kubectl apply -f nginx-deploy.yaml
+vim nginx-deployment.yaml
+```
+paste the above code and type :wq
+```bash
+kubectl apply -f nginx-deployment.yaml
 ```
 
 ### **View All Deployments**  
@@ -265,6 +293,11 @@ kubectl logs -f <pod-name>
 ### **Delete a Pod**  
 ```bash
 kubectl delete pod <pod-name>
+```
+
+### **Delete a cluster**
+```bash
+eksctl delete cluster --name ekswithramana --region eu-central-1
 ```
 ---
 ### K8s Basic and Important commands
