@@ -237,7 +237,7 @@ to create type
 ```bash
 vim nginx-deployment.yaml
 ```
-paste the above code and type :wq
+paste the above code and type esc button and then :wq and --enter
 ```bash
 kubectl apply -f nginx-deployment.yaml
 ```
