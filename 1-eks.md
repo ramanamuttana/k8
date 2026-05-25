@@ -101,6 +101,16 @@ To create an EKS cluster with `eksctl`:
 As of Jan 2026, version 1.31 is outdated. i have used version 1.34.. but you guys please check latest version in AWS and choose accordingly. you can also use 1.34 / 35.. remaining everything is same
  ```
 
+### Create Cluster + Default Node Group Together
+
+The below  command creates:
+
+1.EKS cluster
+
+2.Managed node group
+
+3.Worker nodes
+
 ```bash
 eksctl create cluster --name=ekswithramana \
   --version 1.34 \
