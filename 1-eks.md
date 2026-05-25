@@ -15,7 +15,7 @@ Always refer to the official AWS documentation for the latest updates and detail
 Download the `kubectl` binary:
 
 ```sh
-curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.35.3/2026-04-08/bin/linux/arm64/kubectl
+curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.35.3/2026-04-08/bin/linux/amd64/kubectl
 ```
 
 Make the downloaded file executable:
