@@ -98,7 +98,7 @@ To create an EKS cluster with `eksctl`:
 ## **Please note**
 
 ```bash
-As of Jan 2026, version 1.31 is outdated.. In youtube video series i have used version 1.34.. but you guys please check latest version in AWS and choose accordingly. you can also use 1.34 / 35.. remaining everything is same
+As of Jan 2026, version 1.31 is outdated. i have used version 1.34.. but you guys please check latest version in AWS and choose accordingly. you can also use 1.34 / 35.. remaining everything is same
  ```
 
 ```bash
