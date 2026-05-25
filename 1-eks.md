@@ -474,6 +474,7 @@ Find worker node security group.
 Add inbound rule:
 
 Type	Protocol	Port	Source
+
 Custom TCP	TCP	31142	0.0.0.0/0
 
 Save.
